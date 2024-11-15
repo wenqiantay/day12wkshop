@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+</head>
+<body>
+    <h2>Hello <span data-th-text="${name}"></span></h2>
+    <h3>This is your <span data-th-text="${count}"></span> lucky numbers.</h3>
+
+    <h3> <a href="/">Back</a></h3>
+
+    <div class = "num-list">
+        <img data-th-each="img :${values}" 
+            data-th-src="${img}" class="thumbnail">
+    </div>
+  
+</body>
+</html>
